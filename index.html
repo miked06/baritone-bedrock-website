@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Baritone Bedrock — the Baritone pathfinding bot for Minecraft Bedrock</title>
-  <meta name="description" content="Baritone Bedrock is the Baritone pathfinding bot ported to Minecraft Bedrock Edition for Windows. Walk, mine, build, farm, explore and fly with an elytra, automatically, from chat commands.">
+  <title>Baritone Bedrock â€” Minecraft Bot, Download &amp; Commands</title>
+  <meta name="description" content="Download Baritone Bedrock 1.5.0 for Minecraft Bedrock 26.60 on Windows. Explore automatic mining, schematic building, commands and installation guides.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://miked06.github.io/baritone-bedrock-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Baritone Bedrock">
+  <meta property="og:title" content="Baritone Bedrock â€” Minecraft Bot, Download &amp; Commands">
+  <meta property="og:description" content="Download Baritone Bedrock 1.5.0 for Minecraft Bedrock 26.60 on Windows. Explore automatic mining, schematic building, commands and installation guides.">
+  <meta property="og:url" content="https://miked06.github.io/baritone-bedrock-website/">
+  <meta property="og:image" content="https://miked06.github.io/baritone-bedrock-website/assets/img/og.png">
+  <meta property="og:image:alt" content="Baritone Bedrock Minecraft pathfinding bot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Baritone Bedrock â€” Minecraft Bot, Download &amp; Commands">
+  <meta name="twitter:description" content="Download Baritone Bedrock 1.5.0 for Minecraft Bedrock 26.60 on Windows. Explore automatic mining, schematic building, commands and installation guides.">
+  <meta name="twitter:image" content="https://miked06.github.io/baritone-bedrock-website/assets/img/og.png">
   <meta name="theme-color" content="#0b1016">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Baritone Bedrock">
-  <meta property="og:description" content="The Baritone pathfinding bot, ported to Minecraft Bedrock for Windows. One DLL, every Baritone command.">
-  <meta property="og:image" content="https://miked06.github.io/bartione-bedrock-website/assets/img/og.png">
-  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://miked06.github.io/baritone-bedrock-website/#website", "url": "https://miked06.github.io/baritone-bedrock-website/", "name": "Baritone Bedrock", "inLanguage": "en"}, {"@type": "SoftwareApplication", "@id": "https://miked06.github.io/baritone-bedrock-website/#software", "name": "Baritone Bedrock", "url": "https://miked06.github.io/baritone-bedrock-website/", "applicationCategory": "GameApplication", "operatingSystem": "Windows x64", "softwareVersion": "1.5.0", "softwareRequirements": "Minecraft Bedrock 26.60, Windows package 1.26.6005.0", "description": "Open-source Minecraft Bedrock pathfinding and automation bot for Windows.", "downloadUrl": "https://github.com/miked06/baritone-bedrock/releases/tag/v1.5.0", "releaseNotes": "https://github.com/miked06/baritone-bedrock/releases/tag/v1.5.0", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "isAccessibleForFree": true, "author": {"@type": "Person", "name": "miked06", "url": "https://github.com/miked06"}, "sameAs": "https://github.com/miked06/baritone-bedrock"}]}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -32,8 +40,9 @@
         <a href="#features">Features</a>
         <a href="#demo">Pathfinder</a>
         <a href="#gallery">Gallery</a>
-        <a href="#commands">Commands</a>
-        <a href="#install">Install</a>
+        <a href="commands.html">Commands</a>
+        <a href="download.html">Download</a>
+        <a href="schematics.html">Schematics</a>
         <a href="https://github.com/miked06/baritone-bedrock/tree/main/docs">Docs</a>
       </nav>
       <a class="btn btn--ghost btn--sm nav__gh" href="https://github.com/miked06/baritone-bedrock">
@@ -50,14 +59,14 @@
       <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero__fade"></div>
       <div class="hero__content">
-        <p class="eyebrow reveal"><span class="dot"></span> v1.1.0 · Minecraft Bedrock 26.52 · Windows</p>
+        <p class="eyebrow reveal"><span class="dot"></span> v1.5.0 Â· Minecraft Bedrock 26.60 Â· Windows</p>
         <h1 class="hero__title reveal">
           <span class="pixel">Baritone</span>
           <span class="pixel hero__title-accent">Bedrock</span>
         </h1>
         <p class="hero__lead reveal">
-          The legendary <a href="https://github.com/cabaletta/baritone">Baritone</a> pathfinding bot, rebuilt in C++ for Minecraft Bedrock.
-          Walk, mine, build, farm, explore and fly — automatically, from a chat command.
+          A Windows <a href="https://github.com/cabaletta/baritone">Baritone</a> pathfinding bot, rebuilt in C++ for Minecraft Bedrock.
+          Automate mining and navigation, preview schematics before building, and manage storage and task queues from English chat commands.
         </p>
         <div class="hero__cta reveal">
           <a class="btn btn--primary" href="https://github.com/miked06/baritone-bedrock/releases/latest/download/BaritoneBedrock.dll">
@@ -67,7 +76,7 @@
           <a class="btn btn--ghost" href="https://github.com/miked06/baritone-bedrock">View on GitHub</a>
         </div>
         <div class="hero__chat reveal" aria-label="Example command">
-          <span class="chat-prefix">&gt;</span> <span class="typed" id="hero-typed">#goto diamond_ore</span><span class="caret"></span>
+          <span class="chat-prefix">&gt;</span> <span class="typed" id="hero-typed">#mine diamond_ore</span><span class="caret"></span>
         </div>
       </div>
       <a class="hero__scroll" href="#stats" aria-label="Scroll down"><span></span></a>
@@ -76,33 +85,40 @@
     <!-- ============================== STATS ============================== -->
     <section class="stats" id="stats">
       <div class="container stats__grid">
-        <div class="stat reveal"><b data-count="250">0</b><span>+ Baritone settings</span></div>
-        <div class="stat reveal"><b data-count="60">0</b><span>+ chat commands</span></div>
-        <div class="stat reveal"><b data-count="38">0</b><span>offline tests</span></div>
-        <div class="stat reveal"><b data-count="1">0</b><span>DLL. No packs, no server mod</span></div>
+        <div class="stat reveal"><b data-count="250">250</b><span>+ Baritone settings</span></div>
+        <div class="stat reveal"><b data-count="60">60</b><span>+ chat commands</span></div>
+        <div class="stat reveal"><b data-count="100">100</b><span>offline tests</span></div>
+        <div class="stat reveal"><b data-count="1">1</b><span>DLL. No packs, no server mod</span></div>
       </div>
     </section>
+
+    <section class="section section--alt" id="about"><div class="container guide-content">
+      <h2>What is Baritone Bedrock?</h2>
+      <p>Baritone Bedrock is a free, open-source Minecraft Bedrock automation bot for Windows x64, maintained by <a href="https://github.com/miked06">miked06</a>. It runs inside Minecraft as a native C++ DLL and provides chat commands for pathfinding, mining, building, farming and exploration. It is a community port of <a href="https://github.com/cabaletta/baritone">Baritone for Minecraft Java</a>, not a Mojang or Microsoft product.</p>
+      <p><strong>Current release: 1.5.0.</strong> Supported game: Minecraft Bedrock <strong>26.60</strong>, Windows package <strong>1.26.6005.0</strong>. Android, iOS, consoles and Java Edition are not supported by this DLL. Published <time datetime="2026-11-01">November 1, 2026</time>.</p>
+      <div class="guide-links"><a href="download.html">Download and installation</a><a href="commands.html">Command examples</a><a href="schematics.html">Schematic preview and building</a></div>
+    </div></section>
 
     <!-- ============================== FEATURES ============================== -->
     <section class="section" id="features">
       <div class="container">
         <header class="section__head reveal">
-          <p class="kicker">Everything Baritone does</p>
-          <h2>One bot. Every way to get there.</h2>
-          <p class="section__lead">The pathfinder, the movements, the processes and the settings follow Baritone's Java code closely — if you know Baritone, you already know this.</p>
+          <p class="kicker">Minecraft automation</p>
+          <h2>Baritone Bedrock features</h2>
+          <p class="section__lead">Built from Baritone's pathfinding approach, with Bedrock-specific integration. Version 1.5.0 adds 17 modules; see the <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULE_ROADMAP.md">validation status and platform limits</a>.</p>
         </header>
 
         <div class="features">
           <article class="card reveal" style="--accent: var(--red)">
             <div class="card__icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 13h3v-3h3V7h3V4h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/><rect x="12" y="2" width="3" height="3" fill="currentColor"/></svg></div>
             <h3>Pathfinding</h3>
-            <p>A* over the real world with Baritone's moves: sprint, jump, parkour (even diagonally), pillar, fall, ladders, swimming — breaking and placing blocks on the way. Long trips run in segments through a long-distance chunk cache.</p>
+            <p>A* over the real world with Baritone's moves: sprint, jump, parkour (even diagonally), pillar, fall, ladders, swimming â€” breaking and placing blocks on the way. Long trips run in segments through a long-distance chunk cache.</p>
             <code>#goto 1000 64 -300</code>
           </article>
           <article class="card reveal" style="--accent: var(--cyan)">
             <div class="card__icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13l6-6M8 4l4 4M9 3l2-1 3 3-1 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></div>
             <h3>Mining</h3>
-            <p>Finds ores in loaded chunks and in the cache, mines them and picks up the drops. No ore in sight? It goes down to the right level and branch-mines — in the overworld and the nether.</p>
+            <p>Finds ores in loaded chunks and in the cache, mines them and picks up the drops. No ore in sight? It goes down to the right level and branch-mines â€” in the overworld and the nether.</p>
             <code>#mine 32 diamond</code>
           </article>
           <article class="card reveal" style="--accent: var(--violet)">
@@ -114,13 +130,13 @@
           <article class="card reveal" style="--accent: var(--gold)">
             <div class="card__icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 9l6-1 2-6 2 6 4 1-4 2-2 4-2-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
             <h3>Elytra flight</h3>
-            <p>Plans a 3D flight, steers by simulating the elytra physics, fires rockets when it needs speed, swaps a worn elytra and lands safely on solid ground.</p>
+            <p>Plans a 3D flight, steers by simulating the elytra physics, fires rockets when it needs speed, supports worn-elytra swapping and aims to land on solid ground. See the validation notes before long flights.</p>
             <code>#elytra 5000 -2000</code>
           </article>
           <article class="card reveal" style="--accent: var(--green)">
             <div class="card__icon"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14V6M8 9C8 6 5 5 3 5c0 3 2 4 5 4zM8 7c0-3 3-4 5-4 0 3-2 4-5 4z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
             <h3>Farming</h3>
-            <p>Harvests ripe crops, replants, uses bone meal on young ones and picks everything up — wheat, carrots, potatoes, beetroot, nether wart, cocoa.</p>
+            <p>Harvests ripe crops, replants, uses bone meal on young ones and picks everything up â€” wheat, carrots, potatoes, beetroot, nether wart, cocoa.</p>
             <code>#farm 32</code>
           </article>
           <article class="card reveal" style="--accent: var(--blue)">
@@ -181,10 +197,10 @@
             <canvas id="demo-canvas" aria-label="Pathfinding grid. Drag the player and the goal, paint terrain with the brush."></canvas>
           </div>
           <div class="demo__stats" aria-live="polite">
-            <div><span>Nodes explored</span><b id="st-nodes">—</b></div>
-            <div><span>Path length</span><b id="st-length">—</b></div>
-            <div><span>Estimated time</span><b id="st-time">—</b></div>
-            <div><span>Blocks to break</span><b id="st-break">—</b></div>
+            <div><span>Nodes explored</span><b id="st-nodes">â€”</b></div>
+            <div><span>Path length</span><b id="st-length">â€”</b></div>
+            <div><span>Estimated time</span><b id="st-time">â€”</b></div>
+            <div><span>Blocks to break</span><b id="st-break">â€”</b></div>
           </div>
           <p class="demo__legend">
             <span><i class="lg lg--open"></i>open set</span>
@@ -203,10 +219,11 @@
         <header class="section__head reveal">
           <p class="kicker">In game</p>
           <h2>See it in action</h2>
-          <p class="section__lead">Real gameplay, captured on Minecraft Bedrock 26.52.</p>
+          <p class="section__lead">Archive gameplay captured with Baritone Bedrock 1.1.0 on Minecraft Bedrock 26.52; these clips do not demonstrate every feature of 1.5.0.</p>
         </header>
         <div class="gallery" id="gallery-grid">
-          <!-- filled by assets/js/main.js from the MEDIA list -->
+          <a class="shot" href="media/path-render.jpg"><img src="media/path-render.jpg" alt="Baritone Bedrock path rendered in red inside Minecraft" loading="lazy" width="1280" height="720"><span class="shot__cap">Pathfinding inside Minecraft Bedrock</span></a>
+          <a class="shot" href="media/elytra-glide.jpg"><img src="media/elytra-glide.jpg" alt="Baritone Bedrock elytra trajectory over Minecraft terrain" loading="lazy" width="1280" height="720"><span class="shot__cap">Elytra flight simulation</span></a>
         </div>
       </div>
     </section>
@@ -242,13 +259,13 @@
         <header class="section__head reveal">
           <p class="kicker">Under the hood</p>
           <h2>Plays like a player would</h2>
-          <p class="section__lead">The DLL lives inside the game. It reads the world, thinks on its own thread, and acts only through the inputs a player has — so the server just sees someone playing.</p>
+          <p class="section__lead">The DLL lives inside the game. It reads the world, thinks on its own thread, and acts only through the inputs a player has â€” using native game integration.</p>
         </header>
         <ol class="pipeline">
           <li class="reveal"><b>1</b><h3>Read</h3><p>Every tick, the chunks around you are copied into a snapshot. Chunks you leave are packed into a 2-bit long-distance cache saved on disk.</p></li>
           <li class="reveal"><b>2</b><h3>Think</h3><p>Baritone's A* plans on a worker thread, over the snapshot and the cache, with costs measured in game ticks.</p></li>
-          <li class="reveal"><b>3</b><h3>Move</h3><p>Each movement decides which keys to hold, where to look and which block to break or place — like Baritone's <code class="inline">PathExecutor</code>.</p></li>
-          <li class="reveal"><b>4</b><h3>Act</h3><p>Simulated key presses, mouse clicks and camera rotation, and the game's own block-breaking calls. No packets crafted by hand.</p></li>
+          <li class="reveal"><b>3</b><h3>Move</h3><p>Each movement decides which keys to hold, where to look and which block to break or place â€” like Baritone's <code class="inline">PathExecutor</code>.</p></li>
+          <li class="reveal"><b>4</b><h3>Act</h3><p>Movement inputs, camera rotation and native block interactions drive the bot. Storage and workstation actions check server responses and observed results.</p></li>
         </ol>
       </div>
     </section>
@@ -258,7 +275,7 @@
       <div class="container install">
         <header class="section__head reveal">
           <p class="kicker">Get started</p>
-          <h2>Running in two minutes</h2>
+          <h2>How to install Baritone Bedrock</h2>
         </header>
         <ol class="steps">
           <li class="step reveal">
@@ -272,7 +289,7 @@
             <span class="step__n">2</span>
             <div>
               <h3>Open a world</h3>
-              <p>Start Minecraft Bedrock <b>26.52</b> and turn off <i>"Pause game when focus is lost"</i> in the settings.</p>
+              <p>Start Minecraft Bedrock <b>26.60</b> and turn off <i>"Pause game when focus is lost"</i> in the settings.</p>
             </div>
           </li>
           <li class="step reveal">
@@ -297,20 +314,21 @@
       </div>
     </section>
 
+    <section class="section" id="release"><div class="container guide-content"><p class="kicker">New in 1.5.0</p><h2>Automation beyond pathfinding</h2><div class="features"><article class="card"><h3>Schematic comparison and materials</h3><p>Verify matching, missing, wrong and unloaded blocks, estimate materials from inventory, and repair differences.</p><a href="schematics.html">Read the guide â†’</a></article><article class="card"><h3>Storage, crafting and smelting</h3><p>Register storage and workstations, transfer whole stacks with confirmed receipts, craft available recipes and run furnace batches.</p><a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md#crafting-and-smelting">Read the guide â†’</a></article><article class="card"><h3>Persistent task workflows</h3><p>Queue navigation, mining, storage, builds and waits. Recovery is paused and bound to the world and dimension.</p><a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md#persistent-tasks-and-diagnostics">Read the guide â†’</a></article><article class="card"><h3>Quarries and protected areas</h3><p>Preflight an excavation, preserve an access ramp and compare the completed quarry. Save areas that block entry or modification.</p><a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md#quarry-manager">Read the guide â†’</a></article><article class="card"><h3>Farming and Survival assistance</h3><p>Selected-tree harvesting and replanting, adult animal feeding and population checks, plus opt-in food and retreat assistance.</p><a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md#tree-and-animal-farming">Read the guide â†’</a></article><article class="card"><h3>Placements, routes and control panel</h3><p>Save schematic transforms, export blocks, plan registered portal routes and wide vehicle corridors, or use the Windows control panel.</p><a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md">Read the guide â†’</a></article></div><p>The regression suite passes <strong>100 tests</strong>, including an AddressSanitizer build. Live checks cover storage, Creative workstation actions, furnace smelting, schematic comparison/export, a quarry fixture and chicken feeding. Tree replanting, vehicle driving and sustained Survival assistance still need dedicated live validation. Portal travel continues one leg at a time; crafting needs ingredients already in inventory.</p><p><a href="https://github.com/miked06/baritone-bedrock/releases/tag/v1.5.0">Release notes</a> Â· <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULE_ROADMAP.md">Full validation status</a> Â· <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/FEATURE_COMPARISON.md">Java and Bedrock comparison</a></p></div></section>
     <!-- ============================== FAQ ============================== -->
     <section class="section" id="faq">
       <div class="container faq">
         <header class="section__head reveal">
           <p class="kicker">FAQ</p>
-          <h2>Questions</h2>
+          <h2>Baritone Bedrock FAQ</h2>
         </header>
         <details class="reveal">
           <summary>Which Minecraft versions are supported?</summary>
-          <p>Minecraft Bedrock <b>26.52</b> for Windows (package 1.26.5203.0). The DLL reads the game's memory directly, so each game update needs updated signatures and offsets — the <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/DEVELOPMENT.md#updating-to-a-new-game-version">development guide</a> explains how, and contributions are very welcome.</p>
+          <p>Minecraft Bedrock <b>26.60</b> for Windows (package 1.26.6003.0). The DLL reads the game's memory directly, so each game update needs updated signatures and offsets â€” the <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/DEVELOPMENT.md#updating-to-a-new-game-version">development guide</a> explains how, and contributions are very welcome.</p>
         </details>
         <details class="reveal">
           <summary>Is it the same as Baritone for Java?</summary>
-          <p>It is a port of Baritone's Java code: same commands, same settings, same algorithms and costs. A few things work differently on Bedrock (for example the elytra cannot predict terrain from the world seed) — they are all listed in <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/PARITY.md">PARITY.md</a>.</p>
+          <p>It is a C++ port inspired by Baritone Java, with familiar commands and movement costs. Command names do not guarantee identical behavior: Bedrock cannot predict elytra terrain from a world seed, and other differences are documented in <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/FEATURE_COMPARISON.md">PARITY.md</a>.</p>
         </details>
         <details class="reveal">
           <summary>Does it need a resource pack, a behavior pack or a server plugin?</summary>
@@ -337,7 +355,7 @@
         <h2 class="pixel">Let the bot do the walking.</h2>
         <p>Free and open source under the LGPL-3.0, like Baritone.</p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="https://github.com/miked06/baritone-bedrock/releases/latest">Download v1.1.0</a>
+          <a class="btn btn--primary" href="https://github.com/miked06/baritone-bedrock/releases/latest">Download v1.5.0</a>
           <a class="btn btn--ghost" href="https://github.com/miked06/baritone-bedrock">Star on GitHub</a>
         </div>
       </div>
@@ -361,7 +379,7 @@
   </footer>
 
   <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__close" aria-label="Close">Ã—</button>
     <div class="lightbox__body"></div>
   </div>
 

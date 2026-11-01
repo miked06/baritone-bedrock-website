@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miked06.github.io/baritone-bedrock-website/sitemap.xml

@@ -127,7 +127,7 @@
     }
     body.appendChild(el);
     const cap = document.createElement("p");
-    cap.textContent = m.title + (m.text ? ` — ${m.text}` : "");
+    cap.textContent = m.title + (m.text ? ` â€” ${m.text}` : "");
     body.appendChild(cap);
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
@@ -142,6 +142,7 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !lightbox.hidden) closeLightbox(); });
 
   if (grid) {
+    if (MEDIA.length) grid.replaceChildren();
     if (!MEDIA.length) {
       grid.innerHTML = '<p class="gallery__empty">Screenshots and videos are coming soon.</p>';
     }
@@ -149,18 +150,17 @@
       const b = document.createElement("button");
       b.className = "shot reveal" + (m.wide ? " shot--wide" : "");
       b.style.setProperty("--d", `${Math.min(i, 6) * 80}ms`);
-      b.setAttribute("aria-label", `${m.title} — open`);
+      b.setAttribute("aria-label", `${m.title} â€” open`);
       if (m.type === "video") {
         const v = document.createElement("video");
-        v.muted = true; v.loop = true; v.playsInline = true; v.preload = "metadata";
+        v.muted = true; v.loop = true; v.playsInline = true; v.preload = "none";
         v.src = m.src; if (m.poster) v.poster = m.poster;
         b.appendChild(v);
         const badge = document.createElement("span");
         badge.className = "shot__badge"; badge.textContent = "VIDEO";
         b.appendChild(badge);
-        if (!reduceMotion) {
-          new IntersectionObserver(([e]) => { if (e.isIntersecting) v.play().catch(() => {}); else v.pause(); }, { threshold: 0.35 }).observe(b);
-        }
+        // Load footage only after the visitor opens it in the lightbox.
+        // Posters keep the gallery useful without downloading background videos.
       } else {
         const img = document.createElement("img");
         img.src = m.src; img.alt = m.title; img.loading = "lazy"; img.decoding = "async";
@@ -168,7 +168,7 @@
       }
       const cap = document.createElement("span");
       cap.className = "shot__cap";
-      cap.innerHTML = `<b>${m.title}</b>${m.cmd ? `<code>${m.cmd}</code> · ` : ""}${m.text || ""}`;
+      cap.innerHTML = `<b>${m.title}</b>${m.cmd ? `<code>${m.cmd}</code> Â· ` : ""}${m.text || ""}`;
       b.appendChild(cap);
       b.addEventListener("click", () => openLightbox(m));
       grid.appendChild(b);

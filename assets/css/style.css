@@ -367,7 +367,7 @@ code.inline {
 .footer__legal { grid-column: 1 / -1; font-size: 13px; color: var(--dim); }
 
 /* ------------------------------------------------------------------ reveal */
-.reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); transition-delay: var(--d, 0s); }
+.reveal { opacity: 1; transform: none; transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); transition-delay: var(--d, 0s); }
 .reveal.is-in { opacity: 1; transform: none; }
 .no-js .reveal { opacity: 1; transform: none; }
 
@@ -416,3 +416,22 @@ code.inline {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Guides are useful as static HTML, without canvas or animation scripts. */
+.guide-content { display: grid; gap: 24px; }
+.guide-content h2 { font-size: clamp(27px, 4vw, 42px); }
+.guide-content h3 { margin-top: 10px; }
+.guide-content p, .guide-content li { color: var(--muted); }
+.guide-content strong { color: var(--text); }
+.guide-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.guide-main { padding: 130px 0 72px; }
+.guide-main article { max-width: 900px; margin-inline: auto; }
+.guide-main h1 { font-size: clamp(36px, 6vw, 64px); }
+.guide-main pre { padding: 20px; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 10px; overflow-x: auto; }
+.table-wrap { overflow-x: auto; }
+.guide-main table { border-collapse: collapse; width: 100%; min-width: 520px; }
+.guide-main th, .guide-main td { text-align: left; padding: 14px; border-bottom: 1px solid var(--line-2); }
+.guide-main td { color: var(--muted); }
+.guide-main ul, .guide-main ol { padding-left: 24px; }
+.guide-main li + li { margin-top: 12px; }
+.guide-nav { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 20px 0; }
