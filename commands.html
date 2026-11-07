@@ -1,27 +1,72 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Baritone Bedrock Commands — Mining, Building &amp; Tasks</title>
-  <meta name="description" content="Learn Baritone Bedrock chat commands for navigation, automatic mining, schematic building, storage and persistent task queues.">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Baritone Bedrock 1.7.0 Commands — Mining, Builds &amp; Workflows</title>
+  <meta name="description" content="Use Baritone Bedrock 1.7.0 commands for mining, schematics, production, furnace batches and targeted harvesting. Includes workflow and diagnostic examples.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://miked06.github.io/baritone-bedrock-website/commands.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Baritone Bedrock">
-  <meta property="og:title" content="Baritone Bedrock Commands — Mining, Building &amp; Tasks">
-  <meta property="og:description" content="Learn Baritone Bedrock chat commands for navigation, automatic mining, schematic building, storage and persistent task queues.">
+  <meta property="og:title" content="Baritone Bedrock 1.7.0 Commands — Mining, Builds &amp; Workflows">
+  <meta property="og:description" content="Use Baritone Bedrock 1.7.0 commands for mining, schematics, production, furnace batches and targeted harvesting. Includes workflow and diagnostic examples.">
   <meta property="og:url" content="https://miked06.github.io/baritone-bedrock-website/commands.html">
   <meta property="og:image" content="https://miked06.github.io/baritone-bedrock-website/assets/img/og.png">
   <meta property="og:image:alt" content="Baritone Bedrock Minecraft pathfinding bot">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Baritone Bedrock Commands — Mining, Building &amp; Tasks">
-  <meta name="twitter:description" content="Learn Baritone Bedrock chat commands for navigation, automatic mining, schematic building, storage and persistent task queues.">
-  <meta name="twitter:image" content="https://miked06.github.io/baritone-bedrock-website/assets/img/og.png"><meta name="theme-color" content="#0b1016"><link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://miked06.github.io/baritone-bedrock-website/commands.html", "name": "Baritone Bedrock Commands \u2014 Mining, Building & Tasks", "description": "Learn Baritone Bedrock chat commands for navigation, automatic mining, schematic building, storage and persistent task queues.", "inLanguage": "en", "isPartOf": {"@id": "https://miked06.github.io/baritone-bedrock-website/#website"}, "dateModified": "2026-11-01", "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Baritone Bedrock", "item": "https://miked06.github.io/baritone-bedrock-website/"}, {"@type": "ListItem", "position": 2, "name": "Baritone Bedrock commands", "item": "https://miked06.github.io/baritone-bedrock-website/commands.html"}]}}</script></head><body><a class="skip" href="#main">Skip to content</a><header class="container"><nav class="guide-nav" aria-label="Guides"><a href="./">Home</a><a href="download.html">Download</a><a href="commands.html">Commands</a><a href="schematics.html">Schematics</a></nav></header><main class="container guide-main" id="main"><article class="guide-content"><p class="kicker">Baritone Bedrock · version 1.5.0</p><h1>Baritone Bedrock commands</h1><p>Updated <time datetime="2026-11-01">November 1, 2026</time> · Maintained by <a href="https://github.com/miked06">miked06</a></p>
+  <meta name="twitter:title" content="Baritone Bedrock 1.7.0 Commands — Mining, Builds &amp; Workflows">
+  <meta name="twitter:description" content="Use Baritone Bedrock 1.7.0 commands for mining, schematics, production, furnace batches and targeted harvesting. Includes workflow and diagnostic examples.">
+  <meta name="twitter:image" content="https://miked06.github.io/baritone-bedrock-website/assets/img/og.png"><meta name="theme-color" content="#0b1016"><link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://miked06.github.io/baritone-bedrock-website/commands.html", "name": "Baritone Bedrock 1.7.0 Commands \u2014 Mining, Builds & Workflows", "description": "Use Baritone Bedrock 1.7.0 commands for mining, schematics, production, furnace batches and targeted harvesting. Includes workflow and diagnostic examples.", "inLanguage": "en", "isPartOf": {"@id": "https://miked06.github.io/baritone-bedrock-website/#website"}, "dateModified": "2026-11-07", "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Baritone Bedrock", "item": "https://miked06.github.io/baritone-bedrock-website/"}, {"@type": "ListItem", "position": 2, "name": "Baritone Bedrock commands", "item": "https://miked06.github.io/baritone-bedrock-website/commands.html"}]}}</script></head><body><a class="skip" href="#main">Skip to content</a><header class="container"><nav class="guide-nav" aria-label="Guides"><a href="./">Home</a><a href="download.html">Download</a><a href="commands.html">Commands</a><a href="schematics.html">Schematics</a></nav></header><main class="container guide-main" id="main"><article class="guide-content"><p class="kicker">Baritone Bedrock · version 1.7.0</p><h1>Baritone Bedrock commands</h1><p>Updated <time datetime="2026-11-07">November 7, 2026</time> · Maintained by <a href="https://github.com/miked06">miked06</a></p>
 <p>Baritone Bedrock commands start with <strong>#</strong> in Minecraft chat. They are handled locally by the injected DLL. Start with <code>#help</code>; use <code>#help command</code> for detailed syntax and <code>#stop</code> to stop current activity.</p>
-<h2>Navigation, mining and building examples</h2><div class="table-wrap"><table><thead><tr><th>Command</th><th>Purpose</th></tr></thead><tbody><tr><td><code>#goto 100 64 100</code></td><td>Path toward coordinates you choose in your world.</td></tr><tr><td><code>#mine 32 diamond</code></td><td>Start a mining process targeting diamonds.</td></tr><tr><td><code>#farm 32</code></td><td>Farm supported crops within the configured range.</td></tr><tr><td><code>#schematic load house.mcstructure</code></td><td>Load a schematic preview before construction.</td></tr><tr><td><code>#schematic requirements</code></td><td>Compare estimated materials with inventory.</td></tr><tr><td><code>#schematic build</code></td><td>Build the current placement.</td></tr><tr><td><code>#why</code></td><td>Inspect recent task failures.</td></tr><tr><td><code>#stop</code></td><td>Stop bot activity.</td></tr><tr><td><code>#unload</code></td><td>Unload the bot.</td></tr></tbody></table></div>
-<h2>Register storage and transfer items</h2><pre><code>#storage add supplies 100 64 100
-#storage deposit supplies cobblestone 64
-#storage withdraw supplies oak_planks 32</code></pre><p>Register an actual supported container at the chosen coordinates. Transfers require empty destination slots, use normal game requests and wait for accepted results. Partial stacks are preserved rather than merged.</p>
-<h2>Queue a persistent workflow</h2><pre><code>#task add goto 100 64 100
-#task add wait 5
-#task add inventory torch 16
-#task list
-#task resume
-#task pause</code></pre><p>Relative coordinates are resolved when added. Recovered workflows are paused and tied to the world/dimension. An inventory condition waits for a quantity; it does not craft that item. Failure stops subsequent actions. Crafting and smelting are explicit workstation commands, not checkpointed task kinds.</p>
-<h2>Workstations and the other 1.5.0 modules</h2><p>After registering a table and furnace with <code>#storage add</code>, <code>#craft workbench stick 8</code> requests additional output and <code>#smelt furnace raw_iron iron_ingot 8 coal 1</code> runs a furnace batch. Ingredients must already be available; smelting needs separate input/fuel stacks and an empty furnace.</p><p>The <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/MODULES.md">module command reference</a> covers <code>#protect</code>, <code>#trees</code>, <code>#animals</code>, <code>#quarry</code>, <code>#portal</code>, <code>#vehicle</code>, <code>#survival</code> and <code>#export</code>, including preconditions and validation limits. For the complete existing command inventory, see the <a href="https://github.com/miked06/baritone-bedrock/blob/main/docs/COMMANDS.md">full command reference</a>.</p><nav class="guide-nav" aria-label="Guides"><a href="./">Home</a><a href="download.html">Download</a><a href="commands.html">Commands</a><a href="schematics.html">Schematics</a></nav></article></main><footer class="footer"><div class="container"><p>Free and open source · <a href="https://github.com/miked06/baritone-bedrock">Source on GitHub</a> · LGPL-3.0. Not affiliated with Mojang Studios or Microsoft.</p></div></footer></body></html>
+<h2>Navigation, mining and building examples</h2>
+<div class="table-wrap"><table><thead><tr><th>Command</th><th>Purpose</th></tr></thead><tbody>
+<tr><td><code>#goto 100 64 100</code></td><td>Walk toward coordinates in your world.</td></tr>
+<tr><td><code>#mine 32 diamond</code></td><td>Start mining toward a total inventory quantity.</td></tr>
+<tr><td><code>#schematic load house.mcstructure</code></td><td>Load a preview before construction.</td></tr>
+<tr><td><code>#schematic requirements</code></td><td>Compare estimated materials with inventory.</td></tr>
+<tr><td><code>#schematic build</code></td><td>Build the current placement.</td></tr>
+<tr><td><code>#doctor</code></td><td>Inspect compatibility prerequisites.</td></tr>
+<tr><td><code>#why</code></td><td>Inspect recent task failures.</td></tr>
+<tr><td><code>#stop</code> / <code>#unload</code></td><td>Stop activity or unload the DLL.</td></tr>
+</tbody></table></div>
+<h2>Storage, loadouts and restocking</h2>
+<pre><code>#storage add supplies 100 64 100
+#storage scan all
+#storage find cobblestone
+#restock item cobblestone 64 supplies
+#loadout fill mining supplies</code></pre>
+<p>Register real supported containers and create a loadout before filling it. Restock quantities are <strong>total inventory targets</strong>. Transfers use normal game requests and observed results. Compatible plain piles can merge; unknown/custom metadata needs empty destinations. Active loadout minimums protect deposits.</p>
+<h2 id="production">Production objectives and recipes</h2>
+<pre><code>#storage add table 102 64 100
+#storage add output 104 64 100
+#craft plan torch 16
+#produce table torch 16 supplies output
+#produce status</code></pre>
+<p><code>#produce</code> requests <strong>additional output</strong>. It makes a fresh dependency plan, can fetch supplies, gather supported base resources, craft intermediates and optionally deliver the result. Unsupported missing inputs stop the job. It does not turn raw ores into ingots automatically or invent ingredients.</p>
+<p>The starter planner has 18 output recipes. The repository's <code>tools/import_recipes.py</code> can import supported local Bedrock recipe descriptions into a catalog of up to 2048 outputs; Minecraft still decides unlocks and recipe validity. Read the <a href="https://github.com/miked06/baritone-bedrock/blob/v1.7.0/docs/WINDOWS_NEXT.md#production-objectives">production limits</a> before choosing a target.</p>
+<h2 id="workshop">Multi-furnace workshop</h2>
+<pre><code>#storage add furnace_a 106 64 100
+#storage add furnace_b 108 64 100
+#workshop start raw_iron iron_ingot 32 coal 4 furnace_a furnace_b
+#workshop status</code></pre>
+<p>Use registered empty stations and keep the required input/fuel in inventory. The example splits 32 input items and an explicit budget of four coal between two stations. The pool loads stations before collection passes, checks receipts and expected output, and returns unused fuel. Only supported one-to-one recipes are handled; recipe/fuel suitability remains the game's decision. Inspect stations after interruption.</p>
+<h2 id="harvest">Targeted crop harvesting</h2>
+<pre><code>#harvest sugar_cane 64 16
+#harvest bamboo 64 16
+#harvest cactus 32 16
+#harvest pumpkin 16 16
+#harvest melon 64 16</code></pre>
+<p>Quantities are additional output; melon counts slices. The final number is the radius, from 1 to 64 blocks. Base stems are preserved, and a current selection restricts harvesting. Generic <code>#farm</code> remains available for mixed crops and replanting. Jobs require observed item quantities to finish.</p>
+<h2 id="map-roads">Map and road planning</h2>
+<p>Open <strong>Map</strong> in the Windows control panel to inspect loaded and session-visited chunks, nearby markers, the route and protected-area footprints. Select a destination, then choose <strong>Go to selection</strong>. This map does not show surface heights or every persistent cached chunk.</p>
+<pre><code>#road 100 63 100 140 65 110 3 cobblestone 8
+#schematic requirements
+#construction plan permanent cobblestone 16</code></pre>
+<p>This creates an inspectable road preview and a foundation plan. Coordinates describe paving blocks, not player feet. Roads go along X then Z with bounded width, grade, lighting and volume. Building requires a separate construction start; inspect removals, resources and support limits first.</p>
+<h2 id="workflows">Workflow templates and local diagnostics</h2>
+<pre><code>#workflow templates
+#workflow template produce-store table torch 16 supplies output
+#workflow list
+#workflow run
+#workflow pause
+#report "C:\exports\baritone-report.zip"</code></pre>
+<p>Templates load <strong>paused</strong>. Inventory-sensitive nodes retain absolute targets for recovery in the same world/dimension. Other templates cover build preparation, mining/storage, loadouts and harvesting. The visual editor can edit conditions and failure branches. Diagnostic ZIP export is local; inspect world names, coordinates and file paths before sharing.</p>
+<h2>Validation and complete reference</h2>
+<p>These examples describe implemented commands, not proof that every native combination has been exercised on Minecraft 26.63. See the <a href="https://github.com/miked06/baritone-bedrock/blob/v1.7.0/docs/WINDOWS_NEXT.md">1.7.0 validation matrix</a>, <a href="https://github.com/miked06/baritone-bedrock/blob/v1.7.0/docs/WINDOWS_EXPANSION.md">1.6 expansion guide</a> and <a href="https://github.com/miked06/baritone-bedrock/blob/v1.7.0/docs/COMMANDS.md">complete command reference</a>. Use <code>#help command</code> for current syntax.</p>
+<nav class="guide-nav" aria-label="Guides"><a href="./">Home</a><a href="download.html">Download</a><a href="commands.html">Commands</a><a href="schematics.html">Schematics</a></nav></article></main><footer class="footer"><div class="container"><p>Free and open source · <a href="https://github.com/miked06/baritone-bedrock">Source on GitHub</a> · LGPL-3.0. Not affiliated with Mojang Studios or Microsoft.</p></div></footer></body></html>

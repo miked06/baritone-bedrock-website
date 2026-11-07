@@ -1,0 +1,9 @@
+{
+  "version": "1.7.0",
+  "minecraftVersion": "26.63",
+  "windowsPackage": "1.26.6301.0",
+  "published": "2026-11-07",
+  "coreTests": 139,
+  "pythonTests": 5,
+  "releaseUrl": "https://github.com/miked06/baritone-bedrock/releases/tag/v1.7.0"
+}

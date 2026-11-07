@@ -127,7 +127,7 @@
     }
     body.appendChild(el);
     const cap = document.createElement("p");
-    cap.textContent = m.title + (m.text ? ` â€” ${m.text}` : "");
+    cap.textContent = m.title + (m.text ? ` — ${m.text}` : "");
     body.appendChild(cap);
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
@@ -150,7 +150,7 @@
       const b = document.createElement("button");
       b.className = "shot reveal" + (m.wide ? " shot--wide" : "");
       b.style.setProperty("--d", `${Math.min(i, 6) * 80}ms`);
-      b.setAttribute("aria-label", `${m.title} â€” open`);
+      b.setAttribute("aria-label", `${m.title} — open`);
       if (m.type === "video") {
         const v = document.createElement("video");
         v.muted = true; v.loop = true; v.playsInline = true; v.preload = "none";
@@ -168,7 +168,7 @@
       }
       const cap = document.createElement("span");
       cap.className = "shot__cap";
-      cap.innerHTML = `<b>${m.title}</b>${m.cmd ? `<code>${m.cmd}</code> Â· ` : ""}${m.text || ""}`;
+      cap.innerHTML = `<b>${m.title}</b>${m.cmd ? `<code>${m.cmd}</code> · ` : ""}${m.text || ""}`;
       b.appendChild(cap);
       b.addEventListener("click", () => openLightbox(m));
       grid.appendChild(b);
